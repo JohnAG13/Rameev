@@ -1,0 +1,31 @@
+//cm:memory_cleaner
+
+a = 1
+b = 1.2
+c = 'hello' //text
+d = '123' // text
+print('Hello world')
+
+
+if (a>2){
+    print('a>2')
+}
+else{
+    print('Error')
+}
+
+
+while (i<10){
+    i+=1
+    print('i= ', i)
+}
+
+func one(){
+    x = gud()
+    y = gud()
+    z = x*y
+    return z
+}
+
+e = one()
+print('x*y= ', e)

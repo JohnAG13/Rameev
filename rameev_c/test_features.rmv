@@ -1,0 +1,43 @@
+// Тест функционала Rameev -> C
+
+a = 10
+b = 20.5
+c = "Hello, Rameev on C!"
+flag = True
+empty = none
+
+print(c)
+print("a =", a, "b =", b, "flag =", flag, "empty =", empty)
+
+if (a < 15 and flag){
+    print("Условие if сработало успешно!")
+}else{
+    print("Ошибка условия")
+}
+
+// Списки
+lst = [1, 2, 3]
+print("Исходный список:", lst)
+print("Длина списка:", len(lst))
+print("Элемент с индексом 1:", lst[1])
+
+add(lst, 42)
+print("После add(lst, 42):", lst)
+
+remove(lst, 0)
+print("После remove(lst, 0):", lst)
+
+// Цикл с break
+counter = 0
+while (counter < 10){
+    counter += 1
+    if (counter == 3){
+        continue
+    }
+    if (counter > 5){
+        break
+    }
+    print("counter =", counter)
+}
+print("Тест завершен!")
+
