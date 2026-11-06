@@ -1,0 +1,34 @@
+// examples/fizzbuzz.rmv
+// Классическая задача FizzBuzz
+// Демонстрирует:
+// - Цикл while()
+// - Условные операторы if / else if / else
+// - Операторы сравнения (==, !=)
+// - Логические операторы (and, or)
+
+print("=== FizzBuzz (1 - 20) ===")
+
+i = 1
+while (i <= 20) {
+    // В Rameev проверка на делимость выполняется проверкой равенства
+    // частного, приведенного к int и умноженного обратно на делитель
+    div3 = int(i / 3) * 3 == i
+    div5 = int(i / 5) * 5 == i
+
+    // Если делится и на 3, и на 5 (логическое and)
+    if (div3 and div5) {
+        print("FizzBuzz")
+    } else if (div3) {
+        print("Fizz")
+    } else if (div5) {
+        print("Buzz")
+    } else {
+        // Демонстрация операторов or и !=
+        if (div3 != True or div5 != True) {
+            print(i)
+        }
+    }
+
+    i += 1
+}
+
